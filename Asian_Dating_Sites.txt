@@ -1,0 +1,23 @@
+# Title: Adult Content Blocker by MrMCPMtt
+# Date: 08/09/2024
+# Time: 09:16am BST
+#
+# Extensions used to generate this file: porn
+# Number of unique domains: 83,976
+
+
+# Custom host records are listed here.
+
+
+# End of custom host records.
+# Title: Adult Content Blocker
+
+# =====================================================
+||thaifriendly.com^
+||35.240.183.2^
+||https:/thaifriendly.com^
+||www.pinalove.com^
+||https://www.thaifriendly.com^
+||https://www.filipinocupid.com/^
+||filipinocupid.com^
+||cupid.com^
