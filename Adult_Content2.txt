@@ -5755,7 +5755,7 @@
 ||api.luscious.net^
 ||api.newbienudes.com^
 ||api.ng-source.com^
-||api..com^
+||api.pornhub.com^
 ||api.redgifs.com^
 ||api.scrolller.com^
 ||api.simply-hentai.com^
@@ -17851,6 +17851,7 @@
 ||pornhere.blogspot.com^
 ||pornhits.com^
 ||pornhost.com^
+||pornhub.com^
 ||pornhub.com.do^
 ||pornhub.net^
 ||pornhub.net.co^
@@ -76880,6 +76881,7 @@
 ||www.pornhotmovs.com^
 ||www.pornhouseq.com^
 ||www.pornhub-sexfilme.net^
+||www.pornhub.com.home^
 ||www.pornhub.me.uk^
 ||www.pornhub.org^
 ||www.pornhub.pl^
