@@ -84026,6 +84026,8 @@
 ||www2.giga-jp.com^
 ||yamidas.yamiboard.com^
 ||yamigama.com^
+||uk.yahoo.com^
+||yahoo.com^
 
 # blacklist
 #
