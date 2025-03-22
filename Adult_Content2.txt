@@ -24,6 +24,8 @@
 ||remitly.com^
 ||auth.remitly.com^
 ||mingle2.com^
+||pinalove.com^
+||thaifriendly.com^
 ||0006666.net^
 ||0310love.com^
 ||081xxx.com^
