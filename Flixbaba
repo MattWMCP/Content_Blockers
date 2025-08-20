@@ -1,4 +1,10 @@
-! Block all lanky-bar ciDR9 scripts on flixbaba
+! --- flixbaba safe filter ---
 ||lanky-bar.com/ciDR9.*$script,domain=flixbaba.tv
-! Block specific lanky-bar click-fired script on flixbaba
-||lanky-bar.com/ciDR9.6AbS2q5WliS_W/Q/9LNHj/QTzzN/zxcZMICF0r2XNlDpMv3wNSz_Enxu$script,domain=flixbaba.tv
+flixbaba.tv##script:has-text(lanky-bar)
+flixbaba.tv##a[href*="lanky-bar"]
+flixbaba.tv##iframe[src*="lanky-bar"]
+flixbaba.tv##+js(nowoif, lanky-bar)
+flixbaba.tv##+js(nostif, lanky-bar)
+
+! --- whitelist video provider ---
+@@||vidsrc.net^$document,domain=flixbaba.tv
