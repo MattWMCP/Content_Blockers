@@ -1,4 +1,9 @@
-! --- flixbaba safe filter ---
+! Title: Flixbaba + Lanky-Bar Safe Filter
+! Description: Blocks lanky-bar.com popups/scripts on flixbaba.tv and ensures vidsrc.net videos play smoothly
+! Last updated: 2025-08-20
+! Homepage: https://github.com/MattWMCP/adguard-filters
+
+! --- Block lanky-bar scripts precisely on flixbaba ---
 ||lanky-bar.com/ciDR9.*$script,domain=flixbaba.tv
 flixbaba.tv##script:has-text(lanky-bar)
 flixbaba.tv##a[href*="lanky-bar"]
@@ -6,5 +11,7 @@ flixbaba.tv##iframe[src*="lanky-bar"]
 flixbaba.tv##+js(nowoif, lanky-bar)
 flixbaba.tv##+js(nostif, lanky-bar)
 
-! --- whitelist video provider ---
+! --- Whitelist video provider to prevent buffering ---
 @@||vidsrc.net^$document,domain=flixbaba.tv
+
+! --- Optional: future safe additions can go below ---
