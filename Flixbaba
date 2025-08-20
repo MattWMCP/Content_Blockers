@@ -1,0 +1,18 @@
+! Title: Flixbaba + Lanky-Bar Blocklist
+! Description: Blocks lanky-bar.com and related scripts/popups on flixbaba.tv
+! Last updated: 2025-08-20
+! Homepage: https://github.com/YOURUSERNAME/adguard-filters
+
+! Block all requests to lanky-bar.com (ads, popups, redirects)
+||lanky-bar.com^
+
+! Block any lanky-bar scripts loaded from flixbaba.tv
+flixbaba.tv##^script:has-text(lanky-bar)
+
+! Block hidden elements that trigger lanky-bar on clicks
+flixbaba.tv##a[href*="lanky-bar"]
+flixbaba.tv##a:has-text(lanky-bar)
+flixbaba.tv##div:has(a[href*="lanky-bar"])
+
+! Block inline JavaScript containing lanky-bar references
+/.*lanky-bar\.com.*/$script,domain=flixbaba.tv
