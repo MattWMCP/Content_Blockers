@@ -1,15 +1,4 @@
-! --- Block lanky-bar domain requests only on flixbaba ---
-||lanky-bar.com^$domain=flixbaba.tv
-*/lanky-bar$script,third-party,domain=flixbaba.tv
-*/ciDR9.*$script,third-party,domain=flixbaba.tv
-
-! --- Block inline scripts mentioning lanky-bar only on flixbaba ---
-flixbaba.tv##script:has-text(lanky-bar)
-
-! --- Block clickable elements that try to call lanky-bar ---
-flixbaba.tv##a[href*="lanky-bar"]
-flixbaba.tv##div:has(a[href*="lanky-bar"])
-
-! --- Targeted scriptlets to stop dynamic injections (safe for vidsrc.net) ---
-flixbaba.tv##+js(nowoif, lanky-bar)
-flixbaba.tv##+js(nostif, lanky-bar)
+! Block all lanky-bar ciDR9 scripts on flixbaba
+||lanky-bar.com/ciDR9.*$script,domain=flixbaba.tv
+! Block specific lanky-bar click-fired script on flixbaba
+||lanky-bar.com/ciDR9.6AbS2q5WliS_W/Q/9LNHj/QTzzN/zxcZMICF0r2XNlDpMv3wNSz_Enxu$script,domain=flixbaba.tv
