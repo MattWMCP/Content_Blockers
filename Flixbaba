@@ -1,13 +1,13 @@
-! --- Block lanky-bar scripts directly ---
-||lanky-bar.com^$third-party
+! 🚫 Block lanky-bar only when called from flixbaba.tv
+||lanky-bar.com^$domain=flixbaba.tv
 */lanky-bar$script,third-party,domain=flixbaba.tv
 */ciDR9.*$script,third-party,domain=flixbaba.tv
 
-! --- Kill inline lanky-bar mentions only on flixbaba, not on video host ---
+! 🚫 Kill inline lanky-bar mentions on flixbaba only
 flixbaba.tv##script:has-text(lanky-bar)
 flixbaba.tv##a[href*="lanky-bar"]
 flixbaba.tv##iframe[src*="lanky-bar"]
 
-! --- Scriptlets: targeted only for flixbaba (not vidsrc.net) ---
+! 🚫 Scriptlets (targeted only for flixbaba)
 flixbaba.tv##+js(nowoif, lanky-bar)
 flixbaba.tv##+js(nostif, lanky-bar)
