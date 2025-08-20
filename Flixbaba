@@ -23,3 +23,17 @@ flixbaba.tv##div:has(a[href*="lanky-bar"])
 flixbaba.tv##+js(nowoif, lanky-bar)
 flixbaba.tv##+js(nostif, lanky-bar)
 flixbaba.tv##iframe[src*="lanky-bar"]
+
+! 🚫 Kill inline JavaScript referencing lanky-bar
+flixbaba.tv##+js(nowoif, lanky-bar)
+flixbaba.tv##+js(nostif, lanky-bar)
+flixbaba.tv##+js(set-constant, atob, noopFunc)
+
+! 🚫 Kill onclick events site-wide
+flixbaba.tv##+js(noclick, *, *, *lanky-bar*)
+
+! 🚫 Block iframes & popups that try to load lanky-bar
+flixbaba.tv##iframe[src*="lanky-bar"]
+flixbaba.tv##+js(abort-on-property-read, open)
+flixbaba.tv##+js(abort-on-property-write, location)
+
